@@ -18,12 +18,13 @@ const app = express();
 configDotenv(); 
 
 const corsOptions = {
-  origin: 'http://localhost:4000',
+  origin: 'http://localhost:4000,https://busybootstravel.netlify.app',
   methods: ['GET', 'POST','PATCH','PUT','DELETE'], 
   allowedHeaders: ['Content-Type', 'Authorization'], 
 };
 
 app.use(cors(corsOptions));
+
 
 
 //connect db
