@@ -42,6 +42,11 @@ app.use(express.json());
 
 //routes
 
+
+app.use('/', (req,res) => {
+  res.send("Server is Working")
+})
+
 app.use('/auth', authRoutes);
 
 app.use('/tour',tourRoutes)
