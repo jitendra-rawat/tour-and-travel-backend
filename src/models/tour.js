@@ -55,11 +55,16 @@ const tourSchema = new Schema({
     required: true,
   },
 
+
   itinerary: {
     type: [String],
     default: [],
     required: true,
   },
+
+
+
+
 
   facilities: {
     type: [String],

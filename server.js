@@ -28,7 +28,7 @@ app.use(cors(corsOptions));
 
 
 //connect db
-mongoose.connect('mongodb://localhost:27017/bbt').then( () => console.log("DB Connected")).catch( (err) => console.log(err) )
+mongoose.connect('mongodb+srv://jitendrasingh:jitendrasingh@cluster0.xygxhgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then( () => console.log("DB Connected")).catch( (err) => console.log(err) )
 
 
 
